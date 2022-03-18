@@ -1,0 +1,161 @@
+@import './variables';
+
+.Banner__wrapper {
+  background-color: #001025;
+  color: $white;
+  width: 100vw;
+  height: 96vh;
+  position: relative;
+  .Banner__content-inner {
+    display: flex;
+    .Banner__content-inner_icon {
+      line-height: 30px;
+      padding: 20px;
+      p {
+        font-weight: 300;
+      }
+
+      .Banner__content-inner_icon_image {
+        margin-left: 30px;
+      }
+    }
+
+    .Banner__content-inner_header {
+      margin-top: 150px;
+      text-align: center;
+      width: 50%;
+      h1 {
+        font-weight: 600;
+        margin-bottom: 50px;
+        letter-spacing: 5px;
+        color: $white;
+        line-height: 40px;
+        font-size: 35px;
+        .line {
+          margin: 0 100px;
+          text-align: justify;
+          overflow: hidden;
+          height: 56px;
+          position: relative;
+          line-height: 30px;
+          mix-blend-mode: difference;
+          z-index: 11;
+        }
+        span {
+          position: absolute;
+          
+        }
+      }
+
+      .Banner__content-inner_button {
+        padding: 20px 50px;
+        border: 1px solid $white;
+        font-size: 18px;
+        font-weight: 600;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        position: relative;
+        left: -150px;
+      }
+    }
+
+    .Banner__content-inner_image {
+      position: relative;
+      right: 360px;
+      .Banner__content-inner_btc-bg {
+        width: 550px;
+        position: absolute;
+        top: 80px;
+        left: 300px;
+        opacity: 0.1;
+      }
+      .Banner__content-inner_btc {
+        width: 300px;
+        z-index: 10;
+        position: absolute;
+        left: 470px;
+        top: 150px;
+      }
+    }
+
+    .Banner__content-inner-socials {
+      position: absolute;
+      right: 30px;
+      top: 195px;
+      .Banner__content-inner-socials__icon {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .Banner__content-hero {
+    position: relative;
+    top: 100px;
+    left: 2px;
+    
+    .Banner__content-hero__connection {
+      position: absolute;
+      top: -50px;
+      left: 180px;
+    }
+  }
+
+  .overlay {
+    min-height: 75vh;
+    position: absolute;
+    width: 1440px;
+    z-index: 8;
+    top: 75px;
+    left: 0px;
+    .top {
+      position: absolute;
+      height: 900vh;
+      width: 100%;
+      background-color: $black;
+      top: -170px;
+    }
+  }
+
+  .Banner__card {
+    position: absolute;
+    left: 89px;
+    top: 610px;
+
+    .Banner__intro-card {
+      margin: 50px auto;
+      width: 1253px;
+      height: 169px;
+      background: linear-gradient(
+        90deg,
+        #091e3a 1.44%,
+        #2f80ed 50.72%,
+        #000b48 100%
+      );
+      border: 2px solid #ffffff;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 4px #011f4f;
+      border-radius: 15px;
+      .Banner__intro-card_inner {
+        text-align: center;
+        padding: 30px;
+        .Banner__intro-card_header {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 34px;
+
+          .Banner__intro-card_contents {
+            display: flex;
+            align-items: center;
+            width: 148.66px;
+            height: 34.06px;
+            img{
+              padding-left: 70px;
+              margin-top: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

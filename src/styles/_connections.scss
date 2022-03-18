@@ -1,0 +1,14 @@
+.connection-line{
+    stroke: #fff;
+    stroke-width: 2px;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    fill: transparent;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    to{
+        stroke-dashoffset: 0;
+    }
+}

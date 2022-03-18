@@ -1,0 +1,48 @@
+@import './variables';
+
+nav {
+  color: $white;
+  height: 95px;
+  width: 100vw;
+  position: relative;
+  background-image: url(../static/Header-bg.svg);
+  background-color: #001025;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 0 auto;
+
+    .logo {
+      position: absolute;
+      left: 100px;
+      font-size: 40px;
+      font-weight: 600;
+      color: $white;
+      line-height: 40px;
+
+      .logoline {
+        margin: 0 100px;
+        text-align: justify;
+        overflow: hidden;
+        height: 56px;
+        position: relative;
+        line-height: 30px;
+        mix-blend-mode: difference;
+        z-index: 11;
+        .span {
+          position: relative;
+          // top: -100px;
+        }
+      }
+    }
+
+    li {
+      margin: 0 40px;
+      list-style: none;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
